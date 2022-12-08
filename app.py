@@ -44,4 +44,47 @@ print(pharese.index("G")) # it turns 0
 print(pharese.index("Acad")) # it gaves us where this line starts 7
 print(pharese.index("z")) # error
 print(pharese.replace("Giraffe","Elephant")) # Elephant Academy
-38.18
+
+
+# workind with numbers
+
+from math import * 
+
+print(abs(-7)) # 7
+print(pow(3,2)) # 3 ^ 2 = 9
+print(max(3,2)) # 3
+print(min(3,2)) # 2
+print(round(3.7)) # 4
+print(floor(3.7)) # round the number lower
+print(ceil(3.2)) # round the number up
+print(sqrt(36))
+
+# getting input from user
+name = input("Enter your name: ")
+age = input("Enter your age: ")
+print("Hello " + name + "! You are " + age)
+
+#basic calculator
+num1 = input("Enter a number: ")
+num2 = input("Enter another number: ")
+result = float(num1) + float(num2) # When an external value is entered, python directly detects it as a string, so we need to specify that these are numbers.
+# If we enter an integer, we will get an error when entering a decimal number.
+print(result)
+
+# madlibs game
+color = input("Enter a color: ")
+plural_noun = input("En#ter a plural noun: ")
+celebrity = input("Enter a celebrity: ")
+
+print("Roses are" + color )
+print(plural_noun+" are blue")
+print("I love " + celebrity)
+
+# list
+friends = ["Kevin","Karen","Jim"]
+
+print(friends[-1]) #Jim
+print(friends[1:]) #Karen,Jim
+print(friends[1:2]) #range
+friends[1] = "Mike" #modify values
+1.10
