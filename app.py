@@ -80,11 +80,42 @@ print("Roses are" + color )
 print(plural_noun+" are blue")
 print("I love " + celebrity)
 
-# list
+# list (mutable)
 friends = ["Kevin","Karen","Jim"]
 
 print(friends[-1]) #Jim
 print(friends[1:]) #Karen,Jim
 print(friends[1:2]) #range
 friends[1] = "Mike" #modify values
-1.10
+
+# list function
+lucky_number = [4,8,15,16,23,42]
+friends = ["Kevin","Karen","Jim","Oscar","Tim"]
+friends.extend(lucky_number) # add lists together
+friends.append("Creed") # add the item at end of the list
+friends.insert(1,"Kelly") # we can add the item wherever we want
+friends.remove("Jim") 
+friends.clear() # reset list
+friends.pop() # pop off of the list,removes the last element
+print(friends.index("Kevin")) # gaves us index of Kevin
+print(friends.count("Jim")) # how many jim do we have?
+friends.sort() # asc order
+lucky_number.reverse() # reverse the order
+friends2 = friends.copy() 
+
+# tuples :  a collection of objects separated by commas(immutable)
+coordinates = (4,5) # we can't add,delete,modify,change () tuple [] list
+print(coordinates[0])
+
+# function
+def say_hi():
+    print("Hello User") # any code inside the function needs to be indented
+ 
+say_hi()
+....
+def say_hi(name):
+    print("Hello "+name)
+
+print("Top")
+say_hi("Rabia")
+print("Bottom")
