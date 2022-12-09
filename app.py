@@ -119,3 +119,32 @@ def say_hi(name):
 print("Top")
 say_hi("Rabia")
 print("Bottom")
+
+# return 
+def cube(num) :
+    return num*num*num # after return we can't put anything because it breaks the function here
+
+result = cube(4)
+print(result)
+
+# if statements
+is_male = False
+
+if is_male:
+    print("You are a male")  # indentation
+else:
+    print("You are a female")
+    
+....
+is_male = True
+is_tall = False
+
+if is_male and is_tall:
+    print("You are a tall male")
+elif is_male and not(is_tall):
+    print("You are a short male")
+elif not(is_male) and is_tall:
+    print("You are not a male but are tall")
+else:
+    print("You either not male or not tall or both")
+    1.54
