@@ -147,4 +147,46 @@ elif not(is_male) and is_tall:
     print("You are not a male but are tall")
 else:
     print("You either not male or not tall or both")
-    1.54
+  
+# comparison
+def max_num(num1,num2,num3):
+    if num1 >= num2 and num1 >= num3:
+        return num1
+    elif num2 >= num1 and num2 >= num3:
+        return  num2
+    else:
+        return num3
+
+print(max_num(3,4,3))
+
+# better calculator
+num1 = float(input("Enter first number : ")) # Whatever the user enters, it is perceived as a string, but we want to convert it to a number here immediately.
+op = input("Enter operator : ")
+num2 = float(input("Enter second number : "))
+
+if op == "+":
+    print(num1+num2)
+elif op == "-":
+    print(num1-num2)
+elif op == "/":
+    print(num1/num2)
+elif op == "*":
+    print(num1*num2)
+else:
+    print("Invalid Operator")
+    
+# dictionaries : We use dictionaries to store key/value pairs.
+monthConversions = {
+    #we want to convert 3 digits month name into the full name
+    "Jan" : "January", # "key" : "value"
+    "Feb" : "February",  # every key needs to be unique
+    "Mar" : "March",
+    "Apr" : "April",
+    "May" : "May",
+    "Jun" : "June",
+    "Jul" : "July",
+}
+
+print(monthConversions["Apr"])
+print(monthConversions.get("Apr")) # 
+print(monthConversions.get("Luv","Not a valid key"))
