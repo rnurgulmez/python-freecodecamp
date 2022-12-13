@@ -216,3 +216,43 @@ if out_of_guesses:
     print("Out of guesses, YOU LOSE")
 else:
     print("You win!")
+
+# for loop
+for letter in "Giraffe Academy":
+    print(letter)   # it will print out every single charachter
+ ....   
+friends = ["Karen","Jim","Kevin"]
+
+for friend in friends:
+    print(friend)
+    
+...
+
+for index in range(10):   or range(3,10)  # Increases numbers from 3 to 10, not including 10
+    print(index)
+    
+....
+friends = ["Karen","Jim","Kevin"]
+
+for index in range(len(friends)):
+    print(friends[index])
+    
+....
+
+friends = ["Karen","Jim","Kevin"]
+
+for index in range(5):
+    if index == 0:
+        print("first iteration")
+    else:
+        print("not first")
+        
+# exponent function
+
+def raise_to_power(base_num, pow_num):
+    result = 1
+    for index in range(pow_num):
+        result = result * base_num
+    return result
+
+print(raise_to_power(3,4))
