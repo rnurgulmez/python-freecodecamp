@@ -33,6 +33,7 @@ print("Giraffe\\Academy")
 pharese = "Giraffe Academy"
 print(pharese + " is cool")
 
+
 # function we can use with string
 print(pharese.lower())
 print(pharese.upper())
@@ -256,3 +257,54 @@ def raise_to_power(base_num, pow_num):
     return result
 
 print(raise_to_power(3,4))
+
+# 2D Lists and Nested Loops
+
+number_grid = [
+    [1,2,3],
+    [4,5,6],
+    [7,8,9],
+    [0]
+]
+
+print(number_grid[0][0]) # 1
+
+for row in number_grid:  # returns values in each column
+    for column in row:
+        print(column)
+        
+        
+# Build a translator
+# any vowels becomes 'g'
+
+
+def translate(phrase):
+    translation = ""
+    for letter in phrase:
+        if letter.lower() in "aeiou":
+            if letter.isupper():
+                translation = translation + "G"
+            else:
+                translation = translation + "g"
+        else:
+            translation = translation + letter
+    return translation
+
+print(translate(input("Enter a phrase : ")))
+
+# Comment
+
+# 
+
+'''
+also comment
+'''
+
+# Try / Except 
+
+try:
+    number = int(input("Enter a number : "))
+    print(number)
+except:
+    print("Invalid value")
+3 08
