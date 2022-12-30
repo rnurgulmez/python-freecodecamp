@@ -234,7 +234,7 @@ for index in range(10):   or range(3,10)  # Increases numbers from 3 to 10, not 
 ....
 friends = ["Karen","Jim","Kevin"]
 
-for index in range(len(friends)):
+for index in range(len(friends)):   # karen,jim,kevin 
     print(friends[index])
     
 ....
