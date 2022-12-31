@@ -307,4 +307,18 @@ try:
     print(number)
 except:
     print("Invalid value")
-3 08
+
+# catching spesific errros
+
+try:
+    value = 10 / 0
+    number = int(input("Enter a number : "))
+    print(number)
+except ZeroDivisionError as err:
+    print(err)
+except ValueError:
+    print("Invalid value")
+    
+# Reading files
+
+
