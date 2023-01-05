@@ -320,5 +320,51 @@ except ValueError:
     print("Invalid value")
     
 # Reading files
+# r= read, w=write, a=append, r+= read+write
+
+employee_file = open("employees.txt", "r")
+
+print(employee_file.read()) # we can check by readable() if it can be read or not
+print(employee_file.readline())  # it can read only the first line
+print(employee_file.readline())  # now the second one
+print(employee_file.readlines()) # take all of the lines and put them in a list
+print(employee_file.readlines()[1]) # gives us the second item of this list
+
+employee_file.close()   # whenever we open a file,we need to close it too
 
 
+....
+
+
+employee_file = open("employees.txt", "r")
+
+for employee in employee_file.readlines():
+    print(employee)
+    
+employee_file.close()
+
+# Writing and Appending Files
+
+employee_file = open("employees.txt", "a")
+
+employee_file.write("\nomer")
+
+employee_file.close()
+
+
+...
+
+# if you in a mode w it will override in that existing file
+
+employee_file = open("employees1.txt", "w") # we create new file
+
+employee_file.write("\nomer")
+
+employee_file.close()
+
+# modules
+import useful_tools
+
+print(useful_tools.roll_dice(5)) # we can use module from external py file
+
+# there is a built-in function whereas external function
