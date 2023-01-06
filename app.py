@@ -370,4 +370,25 @@ print(useful_tools.roll_dice(5)) # we can use module from external py file
 # there is a built-in function whereas external function
 # all of the external modules stores in lib folder unlike built-in functions
 # If we want to use an external module, we can google it and download it.
-# pip is like python manager
+# pip is like package manager
+pip install blabla
+pip uninstall blabla
+
+# Classes & Objects
+# Student.py : class is define what a student data type is, object is a actual student
+class Student:
+
+    def __init__(self,name,major,gpa,is_on_probation):
+        self.name = name
+        self.major = major
+        self.gpa = gpa
+        self.is_on_probation = is_on_probation
+# app.py
+from Student import student # from Student file I want to import the student class
+
+student1 = student("rabia","computer scine",2.1,False)
+
+student2 = Student("omer","engineer",1.1,True)
+
+print(student2.gpa)
+print(student1.name)
