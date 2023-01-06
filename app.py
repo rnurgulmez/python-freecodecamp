@@ -368,3 +368,6 @@ import useful_tools
 print(useful_tools.roll_dice(5)) # we can use module from external py file
 
 # there is a built-in function whereas external function
+# all of the external modules stores in lib folder unlike built-in functions
+# If we want to use an external module, we can google it and download it.
+# pip is like python manager
